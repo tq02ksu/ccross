@@ -1,0 +1,4 @@
+# Providers of Speex sound conversion services
+com.github.tq02ksu.ccross.audio.m4a.M4AFormatConversionProvider
+com.github.tq02ksu.ccross.audio.wavpack.WavPackFormatConversionProvider
+

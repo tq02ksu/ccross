@@ -5,7 +5,7 @@
     <parent>
         <artifactId>ccross</artifactId>
         <groupId>com.github.tq02ksu</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.2.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -23,6 +23,27 @@
         </dependency>
 
         <dependency>
+            <groupId>org.jflac</groupId>
+            <artifactId>jflac-codec</artifactId>
+            <systemPath>${project.basedir}/../lib/jflac/jflac-codec-1.5.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>daveguine</groupId>
+            <artifactId>jmacspi15</artifactId>
+            <systemPath>${project.basedir}/../lib/jmac-1.74/jmacspi15.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.beatofthedrum</groupId>
+            <artifactId>wavpack-decoder</artifactId>
+            <systemPath>${project.basedir}/../lib/wavpack/wavpack-decoder-1.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.beatofthedrum</groupId>
+            <artifactId>alacdecoder</artifactId>
+            <systemPath>${project.basedir}/../lib/alac/alacdecoder-0.1.jar</systemPath>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -34,6 +55,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                </configuration>
             </plugin>
         </plugins>
     </build>
